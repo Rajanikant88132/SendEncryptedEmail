@@ -109,10 +109,14 @@ br>
 3. Run below command 
 br>
 <br>
-<b>§JAVA_HOME/bin/java -jar MailUtilityForCAReplacement.jar  --spring.config.location=email-templates/application.properties</b>b>
-br>
+<br>
+<b>
+    §JAVA_HOME/bin/java -jar MailUtilityForCAReplacement.jar  --spring.config.location=email-templates/application.properties
+</b>
+<br>
 <br>
 4. Output looks like something this .
 <br>
 <br>
+<img width="1430" alt="Screenshot 2023-08-04 at 12 21 49" src="https://github.com/Rajanikant88132/SendEncryptedEmail/assets/17102344/2867c522-4b13-4950-b350-a64275d422b3">
 
