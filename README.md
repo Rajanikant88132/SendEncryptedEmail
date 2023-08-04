@@ -87,10 +87,32 @@ custom.mail.signing.jks.file=email-templates/rajanikantjks.jks
 custom.mail.signing.jks.password=rajani.test
 <br>
 
-<b> ############ Steps to run the utility ##################</b>
-<br>
-<br>
+
 <br>
 10. This will be used for encryoting the email with single certificates <br>
 custom.mail.encrypting.jks.file=email-templates/Rajanikant.cer
 <br>
+
+<b> ############ Steps to run the utility ##################</b>
+<br>
+<br>
+1. Clone the repository
+<br>
+<br>
+git clone https://github.com/Rajanikant88132/SendEncryptedEmail.git
+
+<br>
+<br>
+2. Update properties value as per env and requirement 
+br>
+<br>
+3. Run below command 
+br>
+<br>
+<b>§JAVA_HOME/bin/java -jar MailUtilityForCAReplacement.jar  --spring.config.location=email-templates/application.properties</b>b>
+br>
+<br>
+4. Output looks like something this .
+<br>
+<br>
+
