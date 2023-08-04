@@ -78,11 +78,16 @@ custom.mail.signing.certificate.extention=.cer
   <br> 
 custom.mail.signing.certificate.directory=email-templates/certificates
 <br>
+<br>
+<br>
 9. This will be used for signing the email 
 custom.mail.signing.jks.file=email-templates/rajanikantjks.jks
 <br>
 10. This will be used for signing the email 
 custom.mail.signing.jks.password=rajani.test
+<br>
+<br>
+<br>
 <br>
 10. This will be used for encryoting the email with single certificates 
 custom.mail.encrypting.jks.file=email-templates/Rajanikant.cer
