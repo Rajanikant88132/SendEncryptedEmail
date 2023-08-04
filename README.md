@@ -86,6 +86,8 @@ custom.mail.signing.jks.file=email-templates/rajanikantjks.jks
 10. This will be used for signing the email <br>
 custom.mail.signing.jks.password=rajani.test
 <br>
+
+<b> ############ Steps to run the utility ##################</b>
 <br>
 <br>
 <br>
