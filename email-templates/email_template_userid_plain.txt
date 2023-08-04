@@ -1,0 +1,7 @@
+Hi {{user}},
+Your mainframe user-Id  is  {{userID}}.
+
+
+
+Thanks,
+mainframe Team
