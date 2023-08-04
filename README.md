@@ -1,38 +1,41 @@
 # SendEncryptedEmail
 This utility sends signed or encryted email .
+<br>
 Its a spring boot application required java 14 .
+<br>
 Its uses javaMail and Spring Mail to send email based on SMTP protocal.
-
+<br>
 Its configuration based tool. Below are configuration of tool maintain in externalize application.properties file.
 There are OOB/Spring provided properties for mail which start with spring.mail*
+<br>
 custom.mail.* properties are added for utility support .
 
-
+<br>
 ####### MAIL ##############
-spring.mail.host=smtp.gmail.com
-spring.mail.port=587
-spring.mail.username=XXXXX@gmail.com
-spring.mail.password=XXXXXX
-spring.mail.properties.mail.smtp.auth=true
-spring.mail.properties.mail.smtp.starttls.enable=true
-spring.mail.protocol=smtp
-spring.mail.defaultEncoding=UTF-8
-custom.mail.subject=Your mainframe password has been reset
-custom.mail.template.format=html
-custom.mail.template.html.userid=src/main/resources/email-templates/email_template_userid.html
-custom.mail.template.plain.userid=src/main/resources/email-templates/email_template_userid_plain.txt
-custom.mail.template.html.passwd=src/main/resources/email-templates/email_template_password.html
-custom.mail.template.plain.passwd=src/main/resources/email-templates/email_template_password_plain.txt
-custom.mail.template.format.fromuser=rXXXXXX@gmail.com
-custom.mail.template.passwordfile=src/main/resources/email-templates/password_File.txt
-custom.mail.signing.signoption=sign
-custom.mail.signing.singlecertificate=false
-custom.mail.signing.certificate.extention=.cer
-custom.mail.signing.certificate.directory=src/main/resources/email-templates/certificates
+<br>spring.mail.host=smtp.gmail.com
+<br>spring.mail.port=587
+<br>spring.mail.username=XXXXX@gmail.com
+<br>spring.mail.password=XXXXXX
+<br>spring.mail.properties.mail.smtp.auth=true
+<br>spring.mail.properties.mail.smtp.starttls.enable=true
+<br>spring.mail.protocol=smtp
+<br>spring.mail.defaultEncoding=UTF-8
+<br>custom.mail.subject=Your mainframe password has been reset
+<br>custom.mail.template.format=html
+<br>custom.mail.template.html.userid=src/main/resources/email-templates/email_template_userid.html
+<br>custom.mail.template.plain.userid=src/main/resources/email-templates/email_template_userid_plain.txt
+<br>custom.mail.template.html.passwd=src/main/resources/email-templates/email_template_password.html
+<br>custom.mail.template.plain.passwd=src/main/resources/email-templates/email_template_password_plain.txt
+<br>custom.mail.template.format.fromuser=rXXXXXX@gmail.com
+<br>custom.mail.template.passwordfile=src/main/resources/email-templates/password_File.txt
+<br>custom.mail.signing.signoption=sign
+<br>custom.mail.signing.singlecertificate=false
+<br>custom.mail.signing.certificate.extention=.cer
+<br>custom.mail.signing.certificate.directory=src/main/resources/email-templates/certificates
 
-custom.mail.signing.jks.file=src/main/resources/email-templates/rajanikantjks.jks
-custom.mail.signing.jks.password=rajani.test
-custom.mail.encrypting.jks.file=src/main/resources/email-templates/Rajanikant.cer
+<br>custom.mail.signing.jks.file=src/main/resources/email-templates/rajanikantjks.jks
+<br>custom.mail.signing.jks.password=rajani.test
+<br>custom.mail.encrypting.jks.file=src/main/resources/email-templates/Rajanikant.cer
 ####### SPRING ##############
 spring.main.banner-mode=off
 
