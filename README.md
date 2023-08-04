@@ -48,26 +48,29 @@ This is self explanatory  or details can be found over internet .
 2. Below are template file location should be relative to current directory of jar
    template details can be refered in this git repo.
 custom.mail.template.html.userid=email-templates/email_template_userid.html
+<br>
 custom.mail.template.plain.userid=email-templates/email_template_userid_plain.txt
+<br>
 custom.mail.template.html.passwd=email-templates/email_template_password.html
+<br>
 custom.mail.template.plain.passwd=email-templates/email_template_password_plain.txt
-
-3. fromuser is used from which email id ,emails will be sent to reciepient .
+<br>
+4. fromuser is used from which email id ,emails will be sent to reciepient .
 custom.mail.template.format.fromuser=rXXXXXX@gmail.com
 
-4. This file will be used for list of users details like userid ,password ,emailid ,user name
+5. This file will be used for list of users details like userid ,password ,emailid ,user name
 custom.mail.template.passwordfile=email-templates/password_File.txt
 
-5. This value will be used for informing tool whether email should be signed email or encrypted email
+6. This value will be used for informing tool whether email should be signed email or encrypted email
 custom.mail.signing.signoption=sign
 
-6. This property will be used to inform utility whether single certificate will be used or per reciepient different certificate will be provided .
+7. This property will be used to inform utility whether single certificate will be used or per reciepient different certificate will be provided .
 custom.mail.signing.singlecertificate=false
 
-7. this is used what is extention of certificate for dynamically loading certificate.
+8. this is used what is extention of certificate for dynamically loading certificate.
 custom.mail.signing.certificate.extention=.cer
 
-8. This will be used to store list of certificates if  per reciepient different certificate issued .
+9. This will be used to store list of certificates if  per reciepient different certificate issued .
    
 custom.mail.signing.certificate.directory=email-templates/certificates
 
