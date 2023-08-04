@@ -59,19 +59,19 @@ custom.mail.template.html.passwd=email-templates/email_template_password.html
 <br>
 custom.mail.template.plain.passwd=email-templates/email_template_password_plain.txt
 <br>
-4. fromuser is used from which email id ,emails will be sent to reciepient .
+4. fromuser is used from which email id ,emails will be sent to reciepient .<br>
 custom.mail.template.format.fromuser=rXXXXXX@gmail.com
 <br>
-5. This file will be used for list of users details like userid ,password ,emailid ,user name
+5. This file will be used for list of users details like userid ,password ,emailid ,user name<br>
 custom.mail.template.passwordfile=email-templates/password_File.txt
 <br>
-6. This value will be used for informing tool whether email should be signed email or encrypted email
+6. This value will be used for informing tool whether email should be signed email or encrypted email<br>
 custom.mail.signing.signoption=sign
 <br>
-7. This property will be used to inform utility whether single certificate will be used or per reciepient different certificate will be provided .
+7. This property will be used to inform utility whether single certificate will be used or per reciepient different certificate will be provided .<br>
 custom.mail.signing.singlecertificate=false
 <br>
-8. this is used what is extention of certificate for dynamically loading certificate.
+8. this is used what is extention of certificate for dynamically loading certificate.<br>
 custom.mail.signing.certificate.extention=.cer
 <br>
 9. This will be used to store list of certificates if  per reciepient different certificate issued .
@@ -80,15 +80,15 @@ custom.mail.signing.certificate.directory=email-templates/certificates
 <br>
 <br>
 <br>
-9. This will be used for signing the email 
+9. This will be used for signing the email <br>
 custom.mail.signing.jks.file=email-templates/rajanikantjks.jks
 <br>
-10. This will be used for signing the email 
+10. This will be used for signing the email <br>
 custom.mail.signing.jks.password=rajani.test
 <br>
 <br>
 <br>
 <br>
-10. This will be used for encryoting the email with single certificates 
+10. This will be used for encryoting the email with single certificates <br>
 custom.mail.encrypting.jks.file=email-templates/Rajanikant.cer
 <br>
