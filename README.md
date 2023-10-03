@@ -141,12 +141,19 @@ git clone https://github.com/Rajanikant88132/SendEncryptedEmail.git
 <br>
 <br>
 2. Update properties value as per env and requirement 
-br>
 <br>
-3. Run below command 
+conv -f IBM-932 -t IBM-939 password_File1.txt > password_File.txt
+<br>
+conv -f IBM-932 -t IBM-939 application.properties > application.properties 
 
 <br>
-    §JAVA_HOME/bin/java -jar MailUtilityForCAReplacement.jar  --spring.config.location=email-templates/application.properties
+3. Run below command 
+<br>
+export SPRING_FILE=$TOOL_HOME/email-templates/application.properties
+<br>
+export TOOL_HOME=/u/ryadav/samplapi/SendEncryptedEmail
+<br>
+    §JAVA_HOME/bin/java -jar MailUtilityForCAReplacement.jar --spring.config.location=$SPRING_FILE
 <br>
 <br>
 <br>
