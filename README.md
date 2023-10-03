@@ -107,27 +107,31 @@ git clone https://github.com/Rajanikant88132/SendEncryptedEmail.git
 br>
 <br>
 3. Run below command 
-</br>
+<br>
 <b> Generating certificate with java keytool</b>
+<br>
+<br>
 1. keytool -genkey -alias rajanikanttest -keyalg RSA -validity 1825 -keystore "rajanikantjks.jks" -storetype JKS -dname "CN=www.ibm.com,OU=IBM,O=IBM,L=Helsinki,ST=Uusima,C=FI"  -ext san=dns:ibm.com,dns:IBM.COM -keypass rajani.test -storepass rajani.test
-</br>
+<br>
 Output :
 </br>
 Generating 2 048 bit RSA key pair and self-signed certificate (SHA256withRSA) with a validity of 1 825 days
 	for: CN=www.ibm.com, OU=IBM, O=IBM, L=Helsinki, ST=Uusima, C=FI
-</br>
+<br>
 Warning:
 The JKS keystore uses a proprietary format. It is recommended to migrate to PKCS12 which is an industry standard format using "keytool -importkeystore -srckeystore rajanikantjks.jks -destkeystore rajanikantjks.jks -deststoretype pkcs12".
 </br>
 (base) rajanikantyadav@Rajanikants-MacBook-Pro-180 TEST_CERTIFICATES % ls
 rajanikantjks.jks
 </br>
-
+</br>
 <b> Generating certificate with openssl </b>
-openssl req -x509 -newkey rsa:4096 -keyout bit9.pem -out cert.pem -days 365
+</br>
 
-openssl pkcs12 -export -out keyStore.p12 -inkey bit9.pem -in cert.pem  
-
+</br>
+openssl req -x509 -newkey rsa:4096 -keyout publickeytest.pem -out privaatekeyTest.pem -days 365 
+</br>
+openssl pkcs12 -export -out publickeytest.p12 -inkey publickeytest.pem -in privaatekeyTest.pem
 </br>
 </br>
     §JAVA_HOME/bin/java -jar MailUtilityForCAReplacement.jar  --spring.config.location=email-templates/application.properties
