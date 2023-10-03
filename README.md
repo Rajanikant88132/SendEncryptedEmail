@@ -120,22 +120,22 @@ Generating 2 048 bit RSA key pair and self-signed certificate (SHA256withRSA) w
 <br>
 Warning:
 The JKS keystore uses a proprietary format. It is recommended to migrate to PKCS12 which is an industry standard format using "keytool -importkeystore -srckeystore rajanikantjks.jks -destkeystore rajanikantjks.jks -deststoretype pkcs12".
-</br>
+<br>
 (base) rajanikantyadav@Rajanikants-MacBook-Pro-180 TEST_CERTIFICATES % ls
 rajanikantjks.jks
-</br>
-</br>
+<br>
+<br>
 <b> Generating certificate with openssl </b>
-</br>
+<br>
 
-</br>
+<br>
 openssl req -x509 -newkey rsa:4096 -keyout publickeytest.pem -out privaatekeyTest.pem -days 365 
-</br>
+<br>
 openssl pkcs12 -export -out publickeytest.p12 -inkey publickeytest.pem -in privaatekeyTest.pem
-</br>
-</br>
+<br>
+<br>
     §JAVA_HOME/bin/java -jar MailUtilityForCAReplacement.jar  --spring.config.location=email-templates/application.properties
-</b>
+<br>
 <br>
 <br>
 4. Output looks like something this .
