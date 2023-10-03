@@ -93,7 +93,7 @@ custom.mail.signing.jks.password=rajani.test
 custom.mail.encrypting.jks.file=email-templates/Rajanikant.cer
 <br>
 <br>
-<b> ###################Generating certificate - Start###############################</b>
+<b> ###################Generating certificate - Start ###############################</b>
 <b> Generating certificate with java keytool</b>
 <br>
 <br>
