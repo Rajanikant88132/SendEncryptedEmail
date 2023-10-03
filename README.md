@@ -121,9 +121,11 @@ openssl req -x509 -newkey rsa:4096 -keyout privatekeyTest.pem -out publickeytest
 <br>
 openssl pkcs12 -export -out privatekeytest.p12 -inkey privatekeyTest.pem -in publickeytest.pem
 <br>
-
+<br>
 
 <b> iconv -f IBM-932 -t IBM-939 password_File1.txt > password_File.txt <b>
+
+<br>
 <b> ###################Generating certificate - End###############################</b>
 <br>
 <br>
