@@ -92,22 +92,8 @@ custom.mail.signing.jks.password=rajani.test
 10. This will be used for encryoting the email with single certificates <br>
 custom.mail.encrypting.jks.file=email-templates/Rajanikant.cer
 <br>
-
-<b> ############ Steps to run the utility ##################</b>
 <br>
-<br>
-1. Clone the repository
-<br>
-<br>
-git clone https://github.com/Rajanikant88132/SendEncryptedEmail.git
-
-<br>
-<br>
-2. Update properties value as per env and requirement 
-br>
-<br>
-3. Run below command 
-<br>
+<b> ###################Generating certificate - Start###############################</b>
 <b> Generating certificate with java keytool</b>
 <br>
 <br>
@@ -127,12 +113,32 @@ rajanikantjks.jks
 <br>
 <b> Generating certificate with openssl </b>
 <br>
-
+<br>
 <br>
 openssl req -x509 -newkey rsa:4096 -keyout publickeytest.pem -out privaatekeyTest.pem -days 365 
 <br>
+<br>
 openssl pkcs12 -export -out publickeytest.p12 -inkey publickeytest.pem -in privaatekeyTest.pem
 <br>
+<b> ###################Generating certificate - End###############################</b>
+<br>
+<br>
+<br>
+<b> ############ Steps to run the utility ##################</b>
+<br>
+<br>
+1. Clone the repository
+<br>
+<br>
+git clone https://github.com/Rajanikant88132/SendEncryptedEmail.git
+
+<br>
+<br>
+2. Update properties value as per env and requirement 
+br>
+<br>
+3. Run below command 
+
 <br>
     §JAVA_HOME/bin/java -jar MailUtilityForCAReplacement.jar  --spring.config.location=email-templates/application.properties
 <br>
