@@ -115,10 +115,10 @@ rajanikantjks.jks
 <br>
 <br>
 <br>
-openssl req -x509 -newkey rsa:4096 -keyout publickeytest.pem -out privaatekeyTest.pem -days 365 
+openssl req -x509 -newkey rsa:4096 -keyout privatekeyTest.pem -out publickeytest.pem -days 365 
 <br>
 <br>
-openssl pkcs12 -export -out publickeytest.p12 -inkey publickeytest.pem -in privaatekeyTest.pem
+openssl pkcs12 -export -out privatekeytest.p12 -inkey privatekeyTest.pem -in publickeytest.pem
 <br>
 <b> ###################Generating certificate - End###############################</b>
 <br>
